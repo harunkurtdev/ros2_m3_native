@@ -1,9 +1,9 @@
 ## Supported Platforms
-- macOS 14.2.1 (23C71)
-- M1 Max MacBook Pro
+- macOS 15.0 (24A335)
+- M3 MacBook Air
 
 ## install guide
-- [ros2_m1_native/install_guide.md](./install_guide.md)
+- [ros2_m3_native/install_guide.md](./install_guide.md)
 
 ## Roadmap
 
