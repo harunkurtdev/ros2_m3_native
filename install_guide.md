@@ -1,7 +1,7 @@
 ## Test env
 
-- M1 Max 64GB MacBook Pro
-- macOS 14.2.1 (23C71)
+- M3 16GB MacBook Air
+- macOS 15.0 (24A335)
 
 ## How to install
 
@@ -57,8 +57,8 @@ source $HOME/.zshrc
 ```
 
 ```bash
-git clone https://github.com/TakanoTaiga/ros2_m1_native.git
-cd ros2_m1_native
+git clone https://github.com/harunkurtdev/ros2_m3_native.git
+cd ros2_m3_native
 mkdir src
 vcs import src < ros2.repos
 ```
@@ -83,7 +83,7 @@ python3.11 -m colcon build --symlink-install --packages-skip-by-dep qt_gui_cpp -
 ## Write to .zshrc
 
 ```bash
-source ~/ros2_m1_native/install/setup.zsh
+source ~/ros2_m3_native/install/setup.zsh
 export ROS_VERSION=2
 export ROS_PYTHON_VERSION=3
 export ROS_DISTRO=humble
