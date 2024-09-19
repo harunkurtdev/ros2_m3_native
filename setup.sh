@@ -49,13 +49,13 @@ python3.11 -m colcon build --symlink-install --cmake-args \
             -Wno-dev
 
 
-echo "source ~/ros2_m1_native/install/setup.zsh" >> ~/.zshrc
+echo "source ~/ros2_m3_native/install/setup.zsh" >> ~/.zshrc
 echo "export ROS_VERSION=2" >> ~/.zshrc
 echo "export ROS_PYTHON_VERSION=3" >> ~/.zshrc
 echo "export ROS_DISTRO=humble" >> ~/.zshrc
 
 
-source ~/ros2_m1_native/install/setup.zsh
+source ~/ros2_m3_native/install/setup.zsh
 export ROS_VERSION=2
 export ROS_PYTHON_VERSION=3
 export ROS_DISTRO=humble
