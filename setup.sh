@@ -31,9 +31,9 @@ python3.11 -m pip install -U \
       pytest-mock rosdep rosdistro setuptools==59.6.0 vcstool
 
 # clone ros2_m1_native
-git clone https://github.com/TakanoTaiga/ros2_m1_native.git
-mkdir ${HOME}/ros2_m1_native/src
-cd ${HOME}/ros2_m1_native/
+git clone https://github.com/harunkurtdev/ros2_m3_native.git
+mkdir ${HOME}/ros2_m3_native/src
+cd ${HOME}/ros2_m3_native/
 
 patch -l < patches/ros2_console_bridge_vendor.patch
 patch -l < patches/ros2_rviz_ogre_vendor.patch
