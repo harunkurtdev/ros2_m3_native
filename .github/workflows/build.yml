@@ -15,7 +15,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          sudo bash ./build.sh
+          sudo bash ./setup.sh
 
       - name: ros2 doctor
         run: |
