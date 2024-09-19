@@ -15,19 +15,10 @@ jobs:
       
       - name: Install dependencies
         run: |
-          brew install python@3.10
-          pip3.10 install -U catkin_pkg colcon-common-extensions vcstool numpy netifaces lark==1.1.1
-
-      - name: Build ROS 2 on macOS
-        run: |
-          export PATH=$(brew --prefix)/opt/python@3.10/libexec/bin:$PATH
-          mkdir src
-          vcs import src < ros2.repos
-          colcon build --symlink-install --cmake-args -DBUILD_TESTING=OFF -DTHIRDPARTY=FORCE \
-            -DPYTHON_EXECUTABLE=$(which python3.10)
+          sudo bash ./build.sh
 
       - name: ros2 doctor
         run: |
-          export PATH=$(brew --prefix)/opt/python@3.10/libexec/bin:$PATH
+          export PATH=$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH
           source install/setup.zsh
           ros2 doctor
