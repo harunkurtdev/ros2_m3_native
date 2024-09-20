@@ -33,19 +33,19 @@ brew install pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> $HOME/.zshrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> $HOME/.zshrc
 echo 'eval "$(pyenv init -)"' >> $HOME/.zshrc
-pyenv install 3.11.8
-pyenv global 3.11.8
-pyenv local 3.11.8
+pyenv install 3.10.12
+pyenv global 3.10.12
+pyenv local 3.10.12
 source $HOME/.zshrc
 ```
 
 ```bash
-python3.11 -m pip install -U pip
-python3.11 -m pip install --config-settings="--global-option=build_ext" \
+python3.10 -m pip install -U pip
+python3.10 -m pip install --config-settings="--global-option=build_ext" \
        --config-settings="--global-option="-I$(brew --prefix graphviz)/include/"" \
        --config-settings="--global-option="-L$(brew --prefix graphviz)/lib/"" \
        pygraphviz
-python3.11 -m pip install -U \
+python3.10 -m pip install -U \
       argcomplete catkin_pkg colcon-common-extensions coverage \
       cryptography empy==3.3.4 flake8 flake8-blind-except==0.1.1 flake8-builtins \
       flake8-class-newline flake8-comprehensions flake8-deprecated \
